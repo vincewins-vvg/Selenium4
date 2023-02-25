@@ -48,6 +48,13 @@
     <version>2.11.0</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-edge-driver</artifactId>
+    <version>4.7.1</version>
+</dependency>
+
 
 <dependency>
     <groupId>com.aventstack</groupId>

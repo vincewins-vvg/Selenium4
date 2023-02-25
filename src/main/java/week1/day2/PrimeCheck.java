@@ -13,7 +13,7 @@ public class PrimeCheck {
 		for (int i = 2	; i < input; i++) {
 	
 			if(input%i==0) {
-				System.out.println("Number is not  prime: "+i);
+				System.out.println("Number is 5not  prime: "+i);
 			}
 //	3
 			else {
