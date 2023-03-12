@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHandlingInSelenium {
@@ -14,9 +15,12 @@ public class WindowHandlingInSelenium {
 		// TODO Auto-generated method stub
 		
 		ChromeDriver driver = new ChromeDriver();
-		driver.get("https://leafground.com/dashboard.xhtml");
+		driver.get("https://leafground.com/drag.xhtml");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		
+		//draggable element
+		WebElement draggableElement = driver.findElement(By.id("form:conpnl_header"));
 		
 		
 		//Get current window home page handle id
@@ -41,6 +45,8 @@ public class WindowHandlingInSelenium {
 		driver.switchTo().window(homePage);
 		System.out.println("Home page title: "+driver.getTitle());
 		
+		driver.close(); //closes the currently focused window,
+		driver.quit(); //closes every associated window
 		
 		
 		
