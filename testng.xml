@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--parallel to run tests paralelly, threadCount for no of tests to run paralelly -->
+<suite name="LeafTaps" parallel="none" thread-count="5">
+  <test  name="LeadAutomation" >
+    <classes>
+      <class name="week5.day1.CreateLead"/>
+      <class name="week5.day1.DuplicateLead"/>
+      <class name="week5.day1.EditLead"/>
+      <class name="week5.day1.MergeLead"/>      
+      <class name="week5.day1.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
