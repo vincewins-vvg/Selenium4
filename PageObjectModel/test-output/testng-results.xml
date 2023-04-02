@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-26T01:13:04 EDT" name="Default suite" finished-at="2023-03-26T01:13:28 EDT" duration-ms="24078">
+    <groups>
+    </groups>
+    <test started-at="2023-03-26T01:13:04 EDT" name="Default test" finished-at="2023-03-26T01:13:28 EDT" duration-ms="24078">
+      <class name="testcases.CreateLead">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.CreateLead@11392934]" started-at="2023-03-26T01:13:04 EDT" name="openBrowser" finished-at="2023-03-26T01:13:12 EDT" duration-ms="7843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="runLogin()[pri:0, instance:testcases.CreateLead@11392934]" started-at="2023-03-26T01:13:12 EDT" name="runLogin" finished-at="2023-03-26T01:13:28 EDT" duration-ms="15826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.CreateLead@11392934]" started-at="2023-03-26T01:13:28 EDT" name="closeBrowser" finished-at="2023-03-26T01:13:28 EDT" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.CreateLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
