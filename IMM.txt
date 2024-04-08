@@ -1,0 +1,17 @@
+Part of Emerald migration mandate, a new capability needs to be built and provided to the migrated Emerald clients as well as broader RBC retail clients. It is the capability to allow retail client to do the Me to Me Account Transfers between her/his usually CAD/USD DDA account and Foreign Currency account. 
+
+The following 3 foreign currencies will be supported in Emerald Day 1 scope:
+
+EUR
+GBP 
+HKD
+The following use cases will be supported in Emerald Day 1 scope:
+
+DDA (USD/CAD) to FCA
+FCA to DDA
+FCA to FCA Same Currency without FX
+Assumptions
+Existing Me to Me account transfers without OFC (Other Foreign Currency - non USD or CAD) account will still stay in existing payment processing flow
+FX rate will be based on System Pricing with the spread defined in PVR based on the rate class obtained from RFX Negotiate process
+No Fraud or Sanction integration will be needed for Me to Me account transfer
+Reference to Overall FCA for Retail Architecture
