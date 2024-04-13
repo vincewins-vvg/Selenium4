@@ -1,0 +1,96 @@
+
+--------------------------------------------------------------
+Table: Employee
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
+| salary      | int     |
+| managerId   | int     |
++-------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.
+ 
+Write a solution to find the employees who earn more than their managers.
+Return the result table in 
+any order
+.
+The result format is in the following example.
+ 
+
+Example 1:
+
+
+Input: 
+
+Employee table:
++----+-------+--------+-----------+
+| id | name  | salary | managerId |
++----+-------+--------+-----------+
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | Null      |
+| 4  | Max   | 90000  | Null      |
++----+-------+--------+-----------+
+
+Output: 
+
++----------+
+| Employee |
++----------+
+| Joe      |
++----------+
+
+Explanation: 
+Joe is the only employee who earns more than his manager.
+Query:
+
+select name from Employee where salary > ALL (select max(salary) from employee WHERE managerId = 'NULL') and managerId NOT NULL
+
+Given a string s consisting of words and spaces, return the length of the 
+last 
+word in the string.
+A 
+word 
+is a maximal
+substring
+
+consisting of non-space characters only.
+ 
+
+Example 1:
+
+
+Input: 
+s = "Hello World"
+
+Output: 
+5
+
+Explanation: 
+The last word is "World" with length 5.
+
+Example 2:
+
+
+Input: 
+s = "   fly me   to   the moon  "
+
+Output: 
+4
+
+Explanation: 
+The last word is "moon" with length 4.
+
+Example 3:
+
+
+Input: 
+s = "luffy is still joyboy"
+
+Output: 
+6
+
+Explanation: 
+The last word is "joyboy" with length 6.
